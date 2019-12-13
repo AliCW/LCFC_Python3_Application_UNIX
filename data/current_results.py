@@ -1,4 +1,4 @@
-#v0.09
+#v0.10
 import sys
 import datetime
 from itertools import zip_longest
@@ -14,7 +14,7 @@ remain_result_yes = 0
 reverse_list = []
 
 away_vs_ars = str('Arsenal FC 0:0 Leicester City')#<-----------YET TO BE PLAYED
-away_vs_ast = str('Aston Villa 0:0 Leicester City')#<-----------YET TO BE PLAYED
+away_vs_ast = str('Aston Villa 1:4 Leicester City')#<-----------YET TO BE PLAYED
 away_vs_bha = str('Brighton Hove Albion 0:2 Leicester City')
 away_vs_bou = str('AFC Bournemouth 0:0 Leicester City')#<-----------YET TO BE PLAYED
 away_vs_btn = str('Burton Albion 1:3 Leicester City') #carabao cup
@@ -482,7 +482,7 @@ class result_info:
             else: sys.exit()
         if remain_result_yes == 1:
             global reverse_list
-            reverse_list += [home_vs_ast]
+            reverse_list += [away_vs_ast]
             #print(home_vs_ast + prem)
             result_info.fx_LeiVsWat()
     def fx_LeiVsNor():
